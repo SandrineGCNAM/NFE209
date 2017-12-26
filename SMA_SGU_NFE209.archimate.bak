@@ -10,6 +10,10 @@
     <element xsi:type="archimate:BusinessService" name="Réparation, entretien et sous-traitance d'équipements" id="4505b36b-6fca-44b1-b444-6ddc5ca5d139"/>
     <element xsi:type="archimate:BusinessService" name="Vente et distribution de pièces" id="c5514a8c-9eca-4993-8970-4c6bb142eeb4"/>
     <element xsi:type="archimate:BusinessService" name="Les services d'AERO-BREIZH" id="d67a5488-193a-4d89-b1ac-b9854407cd1d"/>
+    <element xsi:type="archimate:Product" name="Ingénierie et gestion des données techniques" id="c0435987-7c84-4bf1-9e86-c22d08512592"/>
+    <element xsi:type="archimate:BusinessService" name="Conception de programmes d’entretien et rédaction de manuels d’entretien correspondants" id="e953d166-743e-4443-a480-6c50ec51da85"/>
+    <element xsi:type="archimate:BusinessService" name="Suivi des opérations d’entretien et des programmes de fiabilité" id="c898f294-c288-449e-bfa4-542005758ca3"/>
+    <element xsi:type="archimate:BusinessService" name="Etudes et développement de modifications pour la flotte" id="908b9b90-e298-4c44-ac20-0572f22b8e40"/>
   </folder>
   <folder name="Application" id="a689f393-6760-4299-9fd4-cd323791dba0" type="application"/>
   <folder name="Technology &amp; Physical" id="c4a8b1c1-1131-4972-b3d5-01d2a94e0819" type="technology"/>
@@ -30,6 +34,9 @@
     <element xsi:type="archimate:CompositionRelationship" id="21f642fe-19f2-44b9-8812-9ac7fbe025b0" source="d67a5488-193a-4d89-b1ac-b9854407cd1d" target="9551ca1f-3c58-48d6-ae40-1a64fc75d083"/>
     <element xsi:type="archimate:CompositionRelationship" id="0d7397fc-9383-4121-a678-e99ea09cb778" source="d67a5488-193a-4d89-b1ac-b9854407cd1d" target="4505b36b-6fca-44b1-b444-6ddc5ca5d139"/>
     <element xsi:type="archimate:CompositionRelationship" id="1693b628-6d14-40a7-93a0-7c7069731eff" source="d67a5488-193a-4d89-b1ac-b9854407cd1d" target="c5514a8c-9eca-4993-8970-4c6bb142eeb4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="668d7192-3582-4798-8c24-935c6466d202" source="c0435987-7c84-4bf1-9e86-c22d08512592" target="e953d166-743e-4443-a480-6c50ec51da85"/>
+    <element xsi:type="archimate:CompositionRelationship" id="89ed44d0-10cb-4e6f-8b6f-b64cf6736825" source="c0435987-7c84-4bf1-9e86-c22d08512592" target="c898f294-c288-449e-bfa4-542005758ca3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="21812532-a024-4f94-8e59-1d2cbc47035d" source="c0435987-7c84-4bf1-9e86-c22d08512592" target="908b9b90-e298-4c44-ac20-0572f22b8e40"/>
   </folder>
   <folder name="Views" id="07d64bbe-a99c-40d2-9918-9c756455a7a2" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Les métiers d'AERO-BREIZH " id="50a060a5-f508-484c-977f-573a615d5750">
@@ -69,18 +76,21 @@
         </child>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Ingénierie et gestion des données techniques" id="4f3487c0-48ec-408d-8ff4-4c2e7801f5b9" viewpoint="stakeholder">
-      <child xsi:type="archimate:DiagramObject" id="562328e6-e134-4eb9-86a4-ee4799487d02" archimateElement="39bbe8e3-40b0-4724-98cf-af68514d1923">
-        <bounds x="372" y="144" width="205" height="409"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="a2d48db9-4444-4068-b460-b4f973ed44db" archimateElement="a6fa5456-b1a9-485d-b108-36dcdc89ed77">
-        <bounds x="34" y="156" width="197" height="85"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="691e65f6-ca37-47c2-a24c-6970a500a3aa" archimateElement="3e1a68e0-d303-490b-8fe3-11b75bfeae3e">
-        <bounds x="36" y="312" width="193" height="97"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="77550cd0-4d0e-4226-99bf-be5d58a17548" archimateElement="93ed8012-8ccf-4a2f-b424-60dd2b0f48fe">
-        <bounds x="48" y="456" width="197" height="97"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Ingénierie et gestion des données techniques" id="4f3487c0-48ec-408d-8ff4-4c2e7801f5b9">
+      <child xsi:type="archimate:DiagramObject" id="adaa1334-4e9a-44ec-9b03-c07a08f2c440" archimateElement="c0435987-7c84-4bf1-9e86-c22d08512592">
+        <bounds x="344" y="214" width="293" height="567"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2a579e5e-9673-4997-9b46-e599450b17b7" source="adaa1334-4e9a-44ec-9b03-c07a08f2c440" target="36b66bb6-140f-4136-a964-0a69c0b91a38" archimateRelationship="668d7192-3582-4798-8c24-935c6466d202"/>
+        <sourceConnection xsi:type="archimate:Connection" id="90cb9bdb-e348-4991-84d9-9b4d26c463b0" source="adaa1334-4e9a-44ec-9b03-c07a08f2c440" target="4d5bbd89-f65d-45cd-9455-b161879accbb" archimateRelationship="89ed44d0-10cb-4e6f-8b6f-b64cf6736825"/>
+        <sourceConnection xsi:type="archimate:Connection" id="28ec7344-0350-4684-8b2e-4a45e97bc5f8" source="adaa1334-4e9a-44ec-9b03-c07a08f2c440" target="d22d4965-5db0-4d5d-92b0-60ad5e9e64cb" archimateRelationship="21812532-a024-4f94-8e59-1d2cbc47035d"/>
+        <child xsi:type="archimate:DiagramObject" id="36b66bb6-140f-4136-a964-0a69c0b91a38" targetConnections="2a579e5e-9673-4997-9b46-e599450b17b7" archimateElement="e953d166-743e-4443-a480-6c50ec51da85">
+          <bounds x="60" y="113" width="193" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4d5bbd89-f65d-45cd-9455-b161879accbb" targetConnections="90cb9bdb-e348-4991-84d9-9b4d26c463b0" archimateElement="c898f294-c288-449e-bfa4-542005758ca3">
+          <bounds x="60" y="192" width="193" height="73"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d22d4965-5db0-4d5d-92b0-60ad5e9e64cb" targetConnections="28ec7344-0350-4684-8b2e-4a45e97bc5f8" archimateElement="908b9b90-e298-4c44-ac20-0572f22b8e40">
+          <bounds x="60" y="286" width="193" height="63"/>
+        </child>
       </child>
     </element>
     <element xsi:type="archimate:SketchModel" name="Menus" id="4fb91929-e70a-4a9c-aa3c-5427de241c58"/>
